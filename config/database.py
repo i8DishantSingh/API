@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 import os 
 
 load_dotenv()
-    
+ 
 
 engine=create_engine(
-    f"{os.getenv("DATA_BASE_URL")}",
+    f"{os.getenv('DATA_BASE_URL')}",
     echo=True
 )
 
